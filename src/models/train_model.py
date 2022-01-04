@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 def train(self):
         # Loading training data
-        train_path = "C:/Users/zebra/.cookiecutters/cookiecutter-data-science/{{ cookiecutter.repo_name }}/data/raw/train_0.npz"
+        train_path = "./data/raw/train_0.npz"
         train_data = np.load(train_path)
         
         # Creating training dataset for torch dataloader
@@ -72,8 +72,8 @@ def train(self):
         # Plotting the training loss and saving the plot
         plt.plot(train_losses)
         plt.show()
-        plt.savefig('C:/Users/zebra/.cookiecutters/cookiecutter-data-science/{{ cookiecutter.repo_name }}/reports/figures/train_plot.png')
-        torch.save(model.state_dict(), 'C:/Users/zebra/.cookiecutters/cookiecutter-data-science/{{ cookiecutter.repo_name }}/models/checkpoint.pth')
+        plt.savefig('./reports/figures/train_plot.png')
+        torch.save(model.state_dict(), './models/checkpoint.pth')
 
 if __name__ == '__main__':
         train()
