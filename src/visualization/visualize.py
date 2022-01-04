@@ -13,10 +13,10 @@ import sklearn.manifold.TSNE as TSNE
 
 def visualize(self):
     model = MyAwesomeModel()
-    state_dict = torch.load('C:/Users/zebra/.cookiecutters/cookiecutter-data-science/{{ cookiecutter.repo_name }}/models/checkpoint.pth')
+    state_dict = torch.load('./models/checkpoint.pth')
     model.load_state_dict(state_dict)
     
-    train_path = "C:/Users/zebra/.cookiecutters/cookiecutter-data-science/{{ cookiecutter.repo_name }}/data/raw/train_0.npz"
+    train_path = "./data/raw/train_0.npz"
     train_data = np.load(train_path)
 
     class TrainDataset(Dataset):
@@ -47,7 +47,7 @@ def visualize(self):
                    init='random').fit_transform(intermid)
         plt.plot(vis)
         plt.show()
-        plt.savefig('C:/Users/zebra/.cookiecutters/cookiecutter-data-science/{{ cookiecutter.repo_name }}/reports/figures/intermid_data')
+        plt.savefig('./reports/figures/intermid_data.png')
         
 
 if __name__ == '__main__':
