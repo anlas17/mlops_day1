@@ -6,7 +6,7 @@ from torch import nn, optim
 from torch.utils.data import Dataset
 from data import mnist
 from model import MyAwesomeModel
-
+import numpy as np
 import matplotlib.pyplot as plt
 
 def evaluate(self):
