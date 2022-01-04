@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def evaluate(self):
-    test_path = "C:/Users/zebra/.cookiecutters/cookiecutter-data-science/{{ cookiecutter.repo_name }}/data/raw/test.npz"
+    test_path = "./data/raw/test.npz"
     test_data = np.load(test_path)
 
     class TestDataset(Dataset):
@@ -47,7 +47,7 @@ def evaluate(self):
         
     # TODO: Implement evaluation logic here
     model = MyAwesomeModel()
-    state_dict = torch.load('C:/Users/zebra/.cookiecutters/cookiecutter-data-science/{{ cookiecutter.repo_name }}/models/checkpoint.pth')
+    state_dict = torch.load('./models/checkpoint.pth')
     model.load_state_dict(state_dict)
     test_set = mnist()
     testloader = torch.utils.data.DataLoader(test_set, batch_size=64, shuffle=True)
