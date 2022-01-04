@@ -28,6 +28,12 @@ def evaluate(self):
             return len(self.data)
     
     def mnist():
+        """
+        Return a Pytorch Dataset for testing.
+            
+            Returns:
+                    test (Dataset): Testing dataset to be used in a dataloader
+        """
         test = TestDataset()
     
         return test
