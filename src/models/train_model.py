@@ -7,7 +7,7 @@ from torch.utils.data import Dataset
 
 from data import mnist
 from model import MyAwesomeModel
-
+import numpy as np
 import matplotlib.pyplot as plt
 
 def train(self):
