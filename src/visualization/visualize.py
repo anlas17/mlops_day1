@@ -1,22 +1,23 @@
 import argparse
 import sys
 
-import torch
-from torch import nn, optim
-
-from data import mnist
-from model import MyAwesomeModel
-
 import matplotlib.pyplot as plt
+import numpy as np
+import torch
+import torch.nn.functional as F
 
-import sklearn.manifold.TSNE as TSNE
+from model import MyAwesomeModel
+from sklearn.manifold import TSNE
+from torch import nn, optim
+from torch.utils.data import Dataset
 
-def visualize(self):
+
+def visualize():
     model = MyAwesomeModel()
-    state_dict = torch.load('./models/checkpoint.pth')
+    state_dict = torch.load('models/checkpoint.pth')
     model.load_state_dict(state_dict)
     
-    train_path = "./data/raw/train_0.npz"
+    train_path = "data/raw/train_0.npz"
     train_data = np.load(train_path)
 
     class TrainDataset(Dataset):
@@ -42,12 +43,14 @@ def visualize(self):
 
     for (i, batch) in enumerate(trainloader):
         images, labels = batch["image"], batch["label"]
-        intermid = model.conv3(images)
-        vis = TSNE(n_components=2, learning_rate='auto',
-                   init='random').fit_transform(intermid)
-        plt.plot(vis)
+        images = images.float()
+        intermid = F.relu(model.conv2(F.relu(model.conv1(images.view(images.shape[0], -1)))))
+        intermid = intermid.detach()
+        #vis = TSNE(n_components=2, learning_rate='auto',
+        #           init='random').fit_transform(intermid)
+        plt.plot(intermid)
         plt.show()
-        plt.savefig('./reports/figures/intermid_data.png')
+        plt.savefig('reports/figures/intermid_data.png')
         
 
 if __name__ == '__main__':

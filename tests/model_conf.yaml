@@ -1,0 +1,5 @@
+#model_conf.yaml
+hyperparameters:
+  input_size: 784
+  output_size: 10
+  dropout_prob: 0.2

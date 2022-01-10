@@ -1,0 +1,33 @@
+2022-01-10 13:17:58,322 INFO    MainThread:17596 [wandb_setup.py:_flush():71] setting env: {}
+2022-01-10 13:17:58,323 WARNING MainThread:17596 [wandb_setup.py:_flush():71] could not find program at C:\Users\zebra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\Scripts\pytest.exe\__main__.py
+2022-01-10 13:17:58,323 INFO    MainThread:17596 [wandb_setup.py:_flush():71] setting login settings: {}
+2022-01-10 13:17:58,323 INFO    MainThread:17596 [wandb_init.py:_log_setup():371] Logging user logs to C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_131758-m54vfqvp\logs\debug.log
+2022-01-10 13:17:58,323 INFO    MainThread:17596 [wandb_init.py:_log_setup():372] Logging internal logs to C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_131758-m54vfqvp\logs\debug-internal.log
+2022-01-10 13:17:58,323 INFO    MainThread:17596 [wandb_init.py:init():404] calling init triggers
+2022-01-10 13:17:58,323 INFO    MainThread:17596 [wandb_init.py:init():409] wandb.init called with sweep_config: {}
+config: {}
+2022-01-10 13:17:58,323 INFO    MainThread:17596 [wandb_init.py:init():460] starting backend
+2022-01-10 13:17:58,323 INFO    MainThread:17596 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=spawn, using: spawn
+2022-01-10 13:17:58,328 INFO    MainThread:17596 [backend.py:ensure_launched():216] starting backend process...
+2022-01-10 13:17:58,478 INFO    MainThread:17596 [backend.py:ensure_launched():221] started backend process with pid: 1760
+2022-01-10 13:17:58,478 INFO    MainThread:17596 [wandb_init.py:init():469] backend started and connected
+2022-01-10 13:17:58,479 INFO    MainThread:17596 [wandb_init.py:init():533] updated telemetry
+2022-01-10 13:17:58,646 INFO    MainThread:17596 [wandb_init.py:init():563] communicating current version
+2022-01-10 13:17:59,767 INFO    MainThread:17596 [wandb_init.py:init():568] got version response 
+2022-01-10 13:17:59,767 INFO    MainThread:17596 [wandb_init.py:init():578] communicating run to backend with 30 second timeout
+2022-01-10 13:18:00,135 INFO    MainThread:17596 [wandb_init.py:init():606] starting run threads in backend
+2022-01-10 13:18:00,426 INFO    MainThread:17596 [wandb_run.py:_console_start():1810] atexit reg
+2022-01-10 13:18:00,427 INFO    MainThread:17596 [wandb_run.py:_redirect():1684] redirect: SettingsConsole.WRAP
+2022-01-10 13:18:00,427 INFO    MainThread:17596 [wandb_run.py:_redirect():1721] Wrapping output streams.
+2022-01-10 13:18:00,431 INFO    MainThread:17596 [wandb_run.py:_redirect():1745] Redirects installed.
+2022-01-10 13:18:00,431 INFO    MainThread:17596 [wandb_init.py:init():633] run started, returning control to user process
+2022-01-10 13:18:01,011 INFO    MainThread:17596 [wandb_run.py:_atexit_cleanup():1780] got exitcode: 0
+2022-01-10 13:18:01,011 INFO    MainThread:17596 [wandb_run.py:_restore():1752] restore
+2022-01-10 13:18:01,963 INFO    MainThread:17596 [wandb_run.py:_restore():1752] restore
+2022-01-10 13:18:04,508 ERROR   MainThread:17596 [wandb_run.py:_atexit_cleanup():1798] Problem finishing run
+Traceback (most recent call last):
+  File "C:\Users\zebra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\wandb\sdk\wandb_run.py", line 1788, in _atexit_cleanup
+    self._on_finish()
+  File "C:\Users\zebra\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\LocalCache\local-packages\Python38\site-packages\wandb\sdk\wandb_run.py", line 1958, in _on_finish
+    print("")
+ValueError: I/O operation on closed file.

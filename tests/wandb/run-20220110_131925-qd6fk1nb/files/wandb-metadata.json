@@ -1,0 +1,25 @@
+{
+    "os": "Windows-10-10.0.19043-SP0",
+    "python": "3.8.10",
+    "heartbeatAt": "2022-01-10T12:19:26.914273",
+    "startedAt": "2022-01-10T12:19:25.109456",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1060 6GB",
+    "gpu_count": 1,
+    "cpu_count": 6,
+    "cuda": null,
+    "args": [
+        "test_model.py"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\zebra\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python38\\Scripts\\pytest.exe\\__main__.py",
+    "git": {
+        "remote": "https://github.com/anlas17/mlops_day1",
+        "commit": "2ae1c6699a8d5c36531b9785ef4ad0c826abfbaa"
+    },
+    "email": "9anders6@gmail.com",
+    "root": "C:/Users/zebra/.cookiecutters/mlops_day1",
+    "host": "DESKTOP-7I657QO",
+    "username": "zebra",
+    "executable": "C:\\Users\\zebra\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.8_qbz5n2kfra8p0\\python.exe"
+}

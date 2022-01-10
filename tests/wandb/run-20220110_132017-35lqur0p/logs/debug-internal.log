@@ -1,0 +1,45 @@
+2022-01-10 13:20:19,258 INFO    MainThread:1032 [internal.py:wandb_internal():87] W&B internal server running at pid: 1032, started at: 2022-01-10 13:20:19.258191
+2022-01-10 13:20:19,260 INFO    WriterThread:1032 [datastore.py:open_for_write():77] open: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\run-35lqur0p.wandb
+2022-01-10 13:20:19,260 DEBUG   HandlerThread:1032 [handler.py:handle_request():130] handle_request: check_version
+2022-01-10 13:20:19,261 DEBUG   SenderThread:1032 [sender.py:send():234] send: header
+2022-01-10 13:20:19,262 DEBUG   SenderThread:1032 [sender.py:send_request():248] send_request: check_version
+2022-01-10 13:20:19,361 DEBUG   SenderThread:1032 [sender.py:send():234] send: run
+2022-01-10 13:20:19,727 INFO    SenderThread:1032 [dir_watcher.py:__init__():169] watching files in: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files
+2022-01-10 13:20:19,727 INFO    SenderThread:1032 [sender.py:_start_run_threads():804] run started: 35lqur0p with start time 1641817218
+2022-01-10 13:20:19,727 DEBUG   SenderThread:1032 [sender.py:send():234] send: summary
+2022-01-10 13:20:19,728 DEBUG   HandlerThread:1032 [handler.py:handle_request():130] handle_request: run_start
+2022-01-10 13:20:19,728 INFO    SenderThread:1032 [sender.py:_save_file():939] saving file wandb-summary.json with policy end
+2022-01-10 13:20:19,737 DEBUG   HandlerThread:1032 [meta.py:__init__():40] meta init
+2022-01-10 13:20:19,737 DEBUG   HandlerThread:1032 [meta.py:__init__():54] meta init done
+2022-01-10 13:20:19,737 DEBUG   HandlerThread:1032 [meta.py:probe():214] probe
+2022-01-10 13:20:19,744 DEBUG   HandlerThread:1032 [meta.py:_setup_git():204] setup git
+2022-01-10 13:20:19,886 DEBUG   HandlerThread:1032 [meta.py:_setup_git():211] setup git done
+2022-01-10 13:20:19,886 DEBUG   HandlerThread:1032 [meta.py:_save_pip():58] save pip
+2022-01-10 13:20:19,886 DEBUG   HandlerThread:1032 [meta.py:_save_pip():72] save pip done
+2022-01-10 13:20:19,886 DEBUG   HandlerThread:1032 [meta.py:probe():252] probe done
+2022-01-10 13:20:20,016 DEBUG   SenderThread:1032 [sender.py:send():234] send: files
+2022-01-10 13:20:20,016 INFO    SenderThread:1032 [sender.py:_save_file():939] saving file wandb-metadata.json with policy now
+2022-01-10 13:20:20,016 DEBUG   HandlerThread:1032 [handler.py:handle_request():130] handle_request: stop_status
+2022-01-10 13:20:20,016 DEBUG   SenderThread:1032 [sender.py:send_request():248] send_request: stop_status
+2022-01-10 13:20:20,641 INFO    Thread-19 :1032 [upload_job.py:push():137] Uploaded file C:\Users\zebra\AppData\Local\Temp\tmp4m95qsvlwandb\2piytc8g-wandb-metadata.json
+2022-01-10 13:20:20,741 INFO    Thread-14 :1032 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\requirements.txt
+2022-01-10 13:20:20,741 INFO    Thread-14 :1032 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\output.log
+2022-01-10 13:20:20,742 INFO    Thread-14 :1032 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\wandb-summary.json
+2022-01-10 13:20:20,742 INFO    Thread-14 :1032 [dir_watcher.py:_on_file_created():217] file/dir created: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\wandb-metadata.json
+2022-01-10 13:20:21,003 DEBUG   HandlerThread:1032 [handler.py:handle_request():130] handle_request: shutdown
+2022-01-10 13:20:21,003 INFO    HandlerThread:1032 [handler.py:finish():731] shutting down handler
+2022-01-10 13:20:21,019 INFO    WriterThread:1032 [datastore.py:close():281] close: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\run-35lqur0p.wandb
+2022-01-10 13:20:21,235 INFO    SenderThread:1032 [sender.py:finish():1070] shutting down sender
+2022-01-10 13:20:21,235 INFO    SenderThread:1032 [dir_watcher.py:finish():283] shutting down directory watcher
+2022-01-10 13:20:21,744 INFO    SenderThread:1032 [dir_watcher.py:finish():313] scan: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files
+2022-01-10 13:20:21,744 INFO    SenderThread:1032 [dir_watcher.py:finish():327] scan save: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\config.yaml config.yaml
+2022-01-10 13:20:21,745 INFO    SenderThread:1032 [dir_watcher.py:finish():327] scan save: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\output.log output.log
+2022-01-10 13:20:21,745 INFO    SenderThread:1032 [dir_watcher.py:finish():327] scan save: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\requirements.txt requirements.txt
+2022-01-10 13:20:21,747 INFO    SenderThread:1032 [dir_watcher.py:finish():327] scan save: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\wandb-metadata.json wandb-metadata.json
+2022-01-10 13:20:21,747 INFO    SenderThread:1032 [dir_watcher.py:finish():327] scan save: C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\wandb-summary.json wandb-summary.json
+2022-01-10 13:20:21,748 INFO    SenderThread:1032 [file_pusher.py:finish():177] shutting down file pusher
+2022-01-10 13:20:21,750 INFO    SenderThread:1032 [file_pusher.py:join():182] waiting for file pusher
+2022-01-10 13:20:22,350 INFO    Thread-22 :1032 [upload_job.py:push():137] Uploaded file C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\wandb-summary.json
+2022-01-10 13:20:22,360 INFO    Thread-21 :1032 [upload_job.py:push():137] Uploaded file C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\requirements.txt
+2022-01-10 13:20:22,362 INFO    Thread-20 :1032 [upload_job.py:push():137] Uploaded file C:\Users\zebra\.cookiecutters\mlops_day1\tests\wandb\run-20220110_132017-35lqur0p\files\config.yaml
+2022-01-10 13:20:22,936 INFO    MainThread:1032 [internal.py:handle_exit():77] Internal process exited
